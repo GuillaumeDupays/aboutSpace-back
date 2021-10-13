@@ -1,0 +1,27 @@
+{
+	"name": "aboutspace-back",
+	"version": "1.0.0",
+	"description": "a node.js app to have all informations about space exploration",
+	"main": "app.js",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1",
+		"dev": "nodemon app.js"
+	},
+	"keywords": [
+		"space",
+		"exploration",
+		"node.js",
+		"back"
+	],
+	"author": "Guillaume Dupays",
+	"license": "ISC",
+	"dependencies": {
+		"axios": "^0.22.0",
+		"body-parser": "^1.19.0",
+		"express": "^4.17.1",
+		"mongoose": "^6.0.10"
+	},
+	"devDependencies": {
+		"nodemon": "^2.0.13"
+	}
+}
