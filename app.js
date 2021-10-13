@@ -17,6 +17,7 @@ app.get('/', (req, res) => {
 
 app.get(`/:allRoutes`, (req, res) => {
 	const id = req.params.allRoutes
+	// security to have correct path if user test differents urls inside navigator
 	if (routesValues.includes(id || pictureRoutes)) {
 		console.log('url correcte', id)
 		res.send(`Vous êtes sur la page : ${id}`)
@@ -50,6 +51,7 @@ mongoose.connection.once('open', () => {
 	console.log('Connecté à mongodb')
 })
 
+// use this url to show
 app.use('/api/pictures', pictureRoutes)
 
 const port = 3000
